@@ -1,0 +1,20 @@
+CREATE DATABASE blockchain;
+
+CREATE TABLE senhas (
+
+	id int PRIMARY KEY AUTO_INCREMENT,
+	login varchar(15) NOT NULL,
+	senha varchar(15) NOT NULL
+
+);
+
+
+CREATE TABLE blockchain (
+
+	id int PRIMARY KEY AUTO_INCREMENT,
+	de varchar(25) NOT NULL,
+	para varchar(25) NOT NULL,
+	transacao int,
+	hash varchar(100),
+	prevHash varchar(100)
+);
